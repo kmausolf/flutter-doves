@@ -1,0 +1,24 @@
+{
+    "doves": [
+        {
+            "name": "Fernando",
+            "description": "A dove of great power. Has large pecks.",
+            "image": "res/images/md2.jpg"
+        },
+        {
+            "name": "Caligor",
+            "description": "Excels at flapping wildly among the tree branches. Strong against Earth magic. Weak against Lightning and gardeners.",
+            "image": "res/images/md4.jpg"
+        },
+        {
+            "name": "Martine",
+            "description": "Carrier of sticks.",
+            "image": "res/images/md1.jpeg"
+        },
+        {
+            "name": "Vanessa",
+            "description": "Oversees the carport nest.",
+            "image": "res/images/md3.jpg"
+        }
+    ]
+}
