@@ -5,6 +5,7 @@ import 'dart:async' show Future;
 
 import 'dove/doveCard.dart';
 import 'dove/doveModel.dart';
+import 'drawer/doveDrawer.dart';
 
 void main() => runApp(MyApp());
 
@@ -76,6 +77,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      drawer: new DoveDrawer(),
       body: Center(
         child: Column(
           children: doveInfo == null 
