@@ -21,6 +21,7 @@ class _DoveCardState extends State<DoveCard> {
       padding: EdgeInsets.symmetric(horizontal: 15.0),
       child: Column(
         children: <Widget>[
+          /// This is the container for the dove's name
           Container (
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(vertical: 8.0),
@@ -32,6 +33,7 @@ class _DoveCardState extends State<DoveCard> {
               )
             )
           ),
+          /// This is the blurb that sits below the dove's name
           Container (
             margin: const EdgeInsets.only(bottom: 20.0),
             child: Text(
@@ -53,8 +55,10 @@ class _DoveCardState extends State<DoveCard> {
           children: <Widget>[
             Container(
               margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+              /// Align the elements of the card vertically
               child: Column(
                 children: <Widget>[
+                  /// The container for the dove's picture
                   Container(
                     height: 200.0,
                     decoration: BoxDecoration(
@@ -69,6 +73,7 @@ class _DoveCardState extends State<DoveCard> {
                     ),
                     width: (MediaQuery.of(context).size.width * 0.9)
                   ),
+                  /// Holds the dove's name, description, and info button
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: new BorderRadius.only(
@@ -79,9 +84,11 @@ class _DoveCardState extends State<DoveCard> {
                     ),
                     child: Column(
                       children: <Widget> [
+                        /// Name and description
                         Center(
                           child: _renderDoveDetails()
                         ),
+                        /// The info button at the bottom of the card
                         FlatButton(
                           color: Colors.blue[100],
                           materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -91,6 +98,7 @@ class _DoveCardState extends State<DoveCard> {
                               bottomRight: const Radius.circular(20.0)
                             )
                           ),
+                          /// Button doesn't actually do anything... yet!
                           onPressed: () => {},
                           child: Align(
                             alignment: Alignment.bottomCenter,
