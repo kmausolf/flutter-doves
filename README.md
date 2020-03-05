@@ -19,3 +19,5 @@ Of course, there's no need to keep the theme, but I find it nice when a tutorial
 1. cd to the project directory
 2. Launch a simulator
 3. `flutter run`
+
+Happy Fluttering!
