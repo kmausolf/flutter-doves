@@ -15,7 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
+      /// Put all of your app's theme data here! You can reference these theme
+      /// elements with Theme.of(context).<your theme variable name>
+      /// theme: This is your "light" theme
+      /// darkTheme: This is your "dark" theme
+      theme: ThemeData( 
         brightness: Brightness.light,
         appBarTheme: AppBarTheme(
           color: Colors.blueGrey[300]
@@ -55,6 +59,8 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  /// Load up the dove data from the json file
+  /// Futures are like JS Promises
   Future<Map> loadDoveInfo() async {
     String rawInfoString = await rootBundle.loadString("res/doves.json");
     return json.decode(rawInfoString);
