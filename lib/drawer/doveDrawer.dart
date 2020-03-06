@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../about/about.dart';
+
 class DoveDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -25,15 +27,18 @@ class DoveDrawer extends StatelessWidget {
             ),
             ListTile(
               title: Text("Home"),
-              onTap: () {},
-            ),
-            ListTile(
-              title: Text("Dove Dex"),
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
             ListTile(
               title: Text("About"),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => About())
+                );
+              },
             )
           ],
         ),
